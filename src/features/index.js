@@ -1,3 +1,6 @@
 export * from './Home'
 export * from './About'
 export * from './Contact'
+export * from './Location'
+export * from './Book'
+export * from './Recharge'

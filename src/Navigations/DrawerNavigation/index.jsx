@@ -4,13 +4,13 @@ import { createDrawerNavigator } from '@react-navigation/drawer'
 import { Ionicons } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
-import { Home } from '../../features';
+import { BookHomeScreen, LocationHomeScreen, RechargeHomeScreen } from '../../features';
 
 const Drawer = createDrawerNavigator()
 
 const DrawerNavigation = () => {
   return (
-    <NavigationContainer>
+    // <NavigationContainer>
         <Drawer.Navigator
             screenOptions={{
                 drawerActiveTintColor: '#fc8900',
@@ -18,7 +18,7 @@ const DrawerNavigation = () => {
         >
             <Drawer.Screen
                 name='Location'
-                component={Home}
+                component={LocationHomeScreen}
                 options={{
                     drawerLabel: 'Location',
                     drawerIcon: ({ color, size }) => (
@@ -29,7 +29,7 @@ const DrawerNavigation = () => {
 
             <Drawer.Screen
                 name='Recharge'
-                component={Home}
+                component={RechargeHomeScreen}
                 options={{
                     drawerLabel: 'Recharge',
                     drawerIcon: ({ color, size }) => (
@@ -40,7 +40,7 @@ const DrawerNavigation = () => {
 
             <Drawer.Screen
                 name='Book'
-                component={Home}
+                component={BookHomeScreen}
                 options={{
                     drawerLabel: 'Book',
                     drawerIcon: ({ color, size }) => (
@@ -49,7 +49,7 @@ const DrawerNavigation = () => {
                 }}
             />
         </Drawer.Navigator>
-    </NavigationContainer>
+    // </NavigationContainer>
   )
 }
 

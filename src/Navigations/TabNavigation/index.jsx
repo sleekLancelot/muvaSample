@@ -10,12 +10,13 @@ const Tab = createBottomTabNavigator()
 
 const Tabs = () => {
   return (
-    <NavigationContainer>
+    // <NavigationContainer>
       <Tab.Navigator
           initialRouteName='Home'
           backBehavior='history'
           screenOptions={{
               tabBarActiveTintColor: '#fc8900',
+              headerShown: false,
           }}
       >
           <Tab.Screen
@@ -51,7 +52,7 @@ const Tabs = () => {
               }}
           />
       </Tab.Navigator>
-    </NavigationContainer>
+    // </NavigationContainer>
   )
 }
 
