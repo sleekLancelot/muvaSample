@@ -1,33 +1,9 @@
 import React from 'react'
-import { Text, View } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
-
-function Home() {
-    return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>Home!</Text>
-      </View>
-    );
-  }
-  
-  function About() {
-    return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>About!</Text>
-      </View>
-    );
-  }
-  
-  function Contact() {
-    return (
-      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-        <Text>Contact!</Text>
-      </View>
-    );
-  }  
+import { About, Contact, Home } from '../../features';
 
 const Tab = createBottomTabNavigator()
 
@@ -50,6 +26,7 @@ const Tabs = () => {
                 ),
             }}
         />
+
         <Tab.Screen
             name='About'
             component={About}
@@ -60,6 +37,7 @@ const Tabs = () => {
                 )
             }}
         />
+        
         <Tab.Screen
             name='Contact'
             component={Contact}
