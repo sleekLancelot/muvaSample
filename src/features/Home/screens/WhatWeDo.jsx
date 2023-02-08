@@ -1,8 +1,12 @@
 import React from 'react'
+import { Text } from 'react-native'
 
 const WhatWeDo = () => {
   return (
-    <div>WhatWeDo</div>
+    <Text style={{
+        textAlign: "center",
+        marginTop: 20,
+      }}>WhatWeDo</Text>
   )
 }
 

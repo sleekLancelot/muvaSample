@@ -66,7 +66,7 @@ const LocationHomeScreen = () => {
       }}
     >
         <Stack.Screen
-          name='LocationScreen'
+          name='Location'
           component={Location}
           // options={{ headerShown: false }}
         />

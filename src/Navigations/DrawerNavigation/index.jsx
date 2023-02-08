@@ -5,7 +5,6 @@ import { Ionicons } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
 import { BookHomeScreen, LocationHomeScreen, RechargeHomeScreen } from '../../features';
-import { Text, View } from 'react-native';
 
 const Drawer = createDrawerNavigator()
 
@@ -18,7 +17,7 @@ const DrawerNavigation = () => {
             }}
         >
             <Drawer.Screen
-                name='Location'
+                name='LocationNav'
                 component={LocationHomeScreen}
                 options={{
                     drawerLabel: 'Location',
